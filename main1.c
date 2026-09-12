@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+//---------Мікровизначення---------
+#define Name       "Nikita"
+#define LastName   "Stepanenko"
+#define GroupName  "RB-61"
+#define Faculty    "RTF"
+#define University "Igor Sikorsky Kyiv Polytechnic Institute"
+
+int main()
+{
+//---------Змінні---------
+    unsigned int semestr;
+    unsigned int age;
+
+    int grade1;
+    int grade2;
+    int grade3;
+    int grade4;
+    int grade5;
+
+    float admissionScore;
+    double averageGrade;
+
+//---------Збираємо дані користувача---------
+    printf("%s %s Enter following data.\n", Name, LastName);
+    printf("Enter semestr: ");
+    scanf("%u", &semestr);
+
+    printf("Enter your admission score: ");
+    scanf("%f", &admissionScore);
+
+    printf("Enter grade #1: ");
+    scanf("%d", &grade1);
+
+    printf("Enter grade #2: ");
+    scanf("%d", &grade2);
+
+    printf("Enter grade #3: ");
+    scanf("%d", &grade3);
+
+    printf("Enter grade #4: ");
+    scanf("%d", &grade4);
+
+    printf("Enter grade #5: ");
+    scanf("%d", &grade5);
+
+    printf("Enter your age: ");
+    scanf("%u", &age);
+
+    return 0;
+}
