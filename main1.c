@@ -48,5 +48,24 @@ int main()
     printf("Enter your age: ");
     scanf("%u", &age);
 
+//---------Розрахунок балів---------
+    averageGrade = (double)(grade1 + grade2 + grade3 + grade4 + grade5) / 5;
+    system("cls");
+
+//---------Виведення інформації в термінал---------
+    printf("***************");
+    printf("\n---------------");
+    printf("\n%s", University);
+    printf("\n%s", Faculty);
+    printf("\n%s", GroupName);
+    printf("\n---------------------------");
+    printf("\nstudent: %s %s", Name, LastName );
+    printf("\nage: %u", age);
+    printf("\nsemestr: %u", semestr);
+    printf("\n---------------------------");
+    printf("\nadmission score: %.1f", admissionScore);
+    printf("\naverage grade = %.2lf", averageGrade);
+    printf("\n");
+
     return 0;
 }
